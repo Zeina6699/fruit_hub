@@ -3,7 +3,7 @@ import 'package:fruit_hub/core/helper_functions/on_generate_routes.dart';
 import 'package:fruit_hub/features/splash/presentation/views/splash_view.dart';
 
 void main() {
-  runApp(FruitHub());
+  runApp(const FruitHub());
 }
 
 class FruitHub extends StatelessWidget {
@@ -12,8 +12,7 @@ class FruitHub extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SplashView(),
-      onGenerateRoute:OnGenerateRoute,
+      onGenerateRoute:onGenerateRoute,
       initialRoute: '/splash',
     );
   }
